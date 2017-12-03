@@ -1,28 +1,54 @@
-/*
+
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/roboto.woff2") format("woff2"),
-    url("../fonts/roboto.woff") format("woff");
+  font-family: "Cuprum";
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/robotobold.woff2") format("woff2"),
-    url("../fonts/robotobold.woff") format("woff");
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumbold.woff2") format("woff2"),
+    url("../fonts/cuprumbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/robotomedium.woff2") format("woff2"),
-    url("../fonts/robotomedium.woff") format("woff");
-  font-weight: 500;
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+    url("../fonts/cuprumbolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
-*/
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -47,6 +73,16 @@ input[type="radio"].visually-hidden {
 body {
   margin: 0;
   padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #828b8f;
+
+
+
   min-width: 1200px;
 }
 
@@ -56,4 +92,253 @@ a {
 
 .disable {
   display: none;
+}
+
+/* ШАПКА */
+
+.site-header__site-logo a,
+.site-footer__site-logo a {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+.site-header__descr {
+  margin: 0;
+  padding: 0;
+
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #ee3643;
+
+}
+
+
+
+.header-contacts__phone {
+  font-size: 21px;
+  line-height: 18px;
+  color: #ee3643;
+
+}
+
+.header-contacts__descr {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+
+
+
+/*НАВИГАЦИЯ */
+
+.navigation-header,
+.navigation,
+.navigation-footer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-footer__link {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.navigation-footer__link--gold {
+  color: #ffd180;
+}
+
+
+
+.search__input {
+  font: inherit;
+  color: 000000;
+}
+
+.account__link {
+  font-size: 21px;
+  line-height: 18px;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/*ОСНОВОНОЙ КОНТЕНТ*/
+
+.groups__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+
+}
+
+.slider__descr {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slider__descr span {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.slider-custom__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-custom__toggle {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.slider-custom__title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.slider-custom__descr {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+
+
+.slider__arrow,
+.slider__toggle {
+  font-size: 0;
+}
+
+.services__title{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.services__descr {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+
+.goods__title,
+.producers__title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+
+.product__descr {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.product__discount {
+  color:#999;
+   text-decoration:line-through;
+}
+
+
+.delivery__title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.delivery__descr {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.delivery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.delivery__item {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+/*ПОДВАЛ*/
+
+.site-footer__descr {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.site-footer__feedback a {
+  font: inherit;
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+
+
+/*ВСПОМОГАТЕЛЬНЫЕ ЭЛЕМЕНТЫ*/
+
+.btn-original {
+  font: inherit;
+  font-size: 14px;
+  color: inherit;
+  text-transform: uppercase;
 }
