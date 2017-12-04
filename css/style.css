@@ -96,6 +96,12 @@ a {
 
 /* ШАПКА */
 
+.site-header__wrapper {
+  width: 100%;
+  background-color: #293449;
+}
+
+
 .site-header__site-logo a,
 .site-footer__site-logo a {
   font-size: 24px;
@@ -110,14 +116,22 @@ a {
   margin: 0;
   padding: 0;
 
+  width: 203px;
+
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   font-weight: 400;
   color: #ee3643;
+  outline: 2px solid orange;
 
 }
 
+.header-contacts {
+  width: 270px;
+  padding: 45px 0;
+  outline: 2px solid orange;
+}
 
 
 .header-contacts__phone {
@@ -133,6 +147,23 @@ a {
   color: #32425c;
 }
 
+.site-header__site-logo {
+  width: 220px;
+  text-align: center;
+  padding: 9px;
+  box-sizing: border-box;
+  outline: 2px solid orange;
+}
+
+.site-header__container .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  box-sizing: border-box;
+  outline: 2px solid blue;
+}
+
 
 
 
@@ -146,9 +177,17 @@ a {
   list-style: none;
 }
 
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
 .navigation__link {
+  display: block;
+  padding: 19px 30px;
   font: inherit;
   color: inherit;
+  outline: 2px solid yellow;
 }
 
 .navigation-footer__link {
@@ -161,11 +200,45 @@ a {
   color: #ffd180;
 }
 
+.navigation-header {
+  display: flex;
+  outline: 2px solid red;
+}
+
+.navigation-header__link {
+  display: block;
+  width: 150px;
+  padding: 11px 5px;
+  box-sizing: border-box;
+  text-align: center;
+  outline: 2px solid green;
+}
+
+.navigation-header__link--bookmarks {
+  width: 160px;
+}
+
+.site-header-nav {
+  display: flex;
+}
+
+
+.search {
+  width: 260px;
+  box-sizing: border-box;
+  outline: 2px solid blue;
+}
 
 
 .search__input {
+  width: 100%;
   font: inherit;
   color: 000000;
+}
+
+.account {
+  width: 300px;
+  outline: 2px solid orange;
 }
 
 .account__link {
@@ -502,6 +575,11 @@ a {
 
 
 /*ВСПОМОГАТЕЛЬНЫЕ ЭЛЕМЕНТЫ*/
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
 
 .btn-original {
   font: inherit;
