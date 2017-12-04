@@ -330,6 +330,24 @@ a {
   list-style: none;
 }
 
+.modal-cart__btn,
+.popup__btn {
+  border: none;
+  opacity: none;
+  background-color: inherit;
+}
+
+.popup__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popup__input,
+.popup__textarea {
+  font: inherit;
+}
+
 
 
 
