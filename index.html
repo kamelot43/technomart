@@ -355,6 +355,7 @@
           <input type="radio" class="visually-hidden" id='param_1' name='toggle'>
           <input type="radio" class="visually-hidden" id='param_2' name='toggle'>
           <input type="radio" class="visually-hidden" id='param_3' name='toggle'>
+
           <div class="slider-custom__content">
 
           <div class="slider-custom__toggles">
@@ -389,10 +390,7 @@
               <p class="slider-custom__descr">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
               <a class="btn-original slider-custom__btn" href="#">Отправить заявку</a>
             </div>
-
-
           </div>
-        </div>
 
 
         </section>
@@ -403,7 +401,7 @@
       <h2 class="visually-hidden">Доставка заказа</h2>
       <div class="container">
         <div class="delivery__companies">
-          <h2 class="delivery__title">Компания "Техномарт"</h2>
+          <h2 class="delivery__title">Компания  «Техномарт»</h2>
           <p class="delivery__descr">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 
           <p class="delivery__descr">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
@@ -414,11 +412,13 @@
             <li class="delivery__item">ЖелДорЭкспедиция</li>
           </ul>
 
+
           <a class="btn-original delivery__btn" href="#">Подробнее о компании</a>
+        </div>
 
           <div class="delivery__contacts">
             <h2 class="delivery__title">Контакты</h2>
-            <p class="delivery__descr">Вы можете забрать товар сами, заехав в наш офис:</p>
+            <p class="delivery__descr delivery__descr--short">Вы можете забрать товар сами, заехав в наш офис:</p>
 
             <a class="delivery__map">
               <img src="img/map_sm.jpg" width="300" height="158" alt="карта проезда">
@@ -426,12 +426,12 @@
             <a class="btn-original delivery__btn" href="#">Заблудились ? Напишите нам !</a>
           </div>
 
-        </div>
       </div>
 
     </section>
   </main>
   <footer class="site-footer">
+    <div class="site-footer__wrapper">
     <div class="container">
       <div class="site-footer__container">
         <div class="site-footer__inner">
@@ -483,6 +483,9 @@
           </ul>
         </nav>
       </div>
+    </div>
+  </div>
+    <div class="container">
 
       <p class="site-footer__copygight">© 2010–2017 Компания «Техномарт» Все права защищены</p>
 
@@ -511,14 +514,15 @@
       </div>
 
       <div class="site-footer__feedback">
-        Разработано
+        Разработано -
         <a href="#">htmlacademy.ru</a>
       </div>
 
     </div>
+
   </footer>
 
-  <section class="modal-cart">
+  <section class="modal-cart disable">
     <button class="modal-cart__close" type="button" title="Закрыть">Закрыть</button>
 
     <p class="modal-cart__descr">Товар добавлен в корзину</p>
@@ -531,7 +535,7 @@
     </div>
   </section>
 
-  <section class="popup">
+  <section class="popup disable">
     <h2 class="visually-hidden">Заполните форму для обратной связи</h2>
 
     <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
