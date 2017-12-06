@@ -109,6 +109,10 @@ a {
   outline: 2px solid pink;
 }
 
+.site-header--inner {
+  margin-bottom: 0;
+}
+
 .site-header__site-logo a {
   font-size: 24px;
   line-height: 24px;
@@ -268,26 +272,48 @@ a {
 
 /*ОСНОВОНОЙ КОНТЕНТ*/
 
+.site-main__content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .site-main__title {
   margin: 0;
   padding: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 28px;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+  background-color: silver;
+  outline: 2px solid gold;
+}
+
+.breadcrumbs {
+  outline: 2px solid gold;
 }
 
 .breadcrumbs__list {
+  display: flex;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
   list-style: none;
 }
 
 .breadcrumbs__link {
+  display: block;
+  padding:25px 15px 15px 15px;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
 }
+
 
 .groups {
   width: 300px;
@@ -436,7 +462,12 @@ a {
 .goods__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 20px 0;
+}
+
+.goods__item {
+  margin-bottom: 20px;
 }
 
 .goods__header,
@@ -579,28 +610,44 @@ justify-content: space-between;
   color: #000000;
 }
 
+.filter {
+  width: 220px;
+  outline: 2px solid gold;
+}
+
 .filter__fieldset {
   margin: 0;
   padding: 0;
   border: none;
 }
 
+.filter__fieldset--price {
+  min-height: 190px;
+  outline: 2px solid gold;
+  box-sizing: border-box;
+}
+
 .filter__title,
 .sort__title {
   margin: 0;
   padding: 0;
+  padding: 8px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
+  outline: 2px solid red;
 }
 
 .filter__legend {
+  padding: 10px 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  outline: 2px solid red;
 }
 
 .filter__list {
@@ -631,13 +678,34 @@ justify-content: space-between;
   font: inherit;
 }
 
+.sort {
+  width: 700px;
+  outline: 2px solid gold;
+}
+
+.sort__header {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.sort__arrows {
+  position: absolute;
+}
+
 .sort__list {
+  display: flex;
+  width: 480px;
   margin: 0;
   padding: 0;
+  margin-left: auto;
   list-style: none;
+  outline: 2px solid gold;
 }
 
 .sort__link {
+  display: block;
+  padding: 8px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;

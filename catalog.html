@@ -7,15 +7,28 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
+  <!--<style>
+  HTML {
+    background: url( 'img/2.jpg' ) 50% 0 no-repeat;
+  }
+
+  BODY {
+    opacity: .5;
+  }
+</style>-->
+
 </head>
 
 <body>
-  <header class="site-header">
-    <nav class="site-header-nav">
+  <header class="site-header site-header--inner">
+    <h1 class="visually-hidden">Магазин строительных инструментов "Техномарт"</h1>
+    <div class="site-header__wrapper">
       <div class="container">
+    <nav class="site-header-nav">
+
 
         <div class="site-header__site-logo">
-          <a href="#">Техномарт</a>
+          <a href="index.html">Техномарт</a>
         </div>
 
         <ul class="navigation-header">
@@ -40,24 +53,26 @@
 
           <li class="navigation-header__item">
             <a class="navigation-header__link navigation-header__link--cart" tabindex="0">
-              Корзина: <span>10</span>
+              Корзина: <span>0</span>
             </a>
           </li>
 
           <li class="navigation-header__item">
             <a class="navigation-header__link navigation-header__link--order" tabindex="0">
-                Оформить заказ
+              Оформить заказ
             </a>
           </li>
 
         </ul>
-      </div>
+
     </nav>
+    </div>
+  </div>
 
     <div class="site-header__container">
       <div class="container">
         <p class="site-header__descr">
-          Интернет-магазин строительных материалов<br> и инструментов для ремонта
+          Интернет-магазин строительных материалов <br>и инструментов для ремонта
         </p>
 
         <section class="header-contacts">
@@ -102,7 +117,7 @@
         <ul class="navigation">
 
           <li class="navigation__item">
-            <a class="navigation__link" href="index.html" tabindex="0">Главная</a>
+            <a class="navigation__link" href="#" tabindex="0">Главная</a>
           </li>
 
           <li class="navigation__item">
@@ -110,7 +125,7 @@
           </li>
 
           <li class="navigation__item">
-            <a class="navigation__link" href="#" tabindex="0">Каталог</a>
+            <a class="navigation__link" href="catalog.html" tabindex="0">Каталог</a>
           </li>
 
           <li class="navigation__item">
@@ -135,7 +150,9 @@
     </nav>
   </header>
 
+
   <main class="site-main">
+    <div class="container">
 
     <div class="breadcrumbs site-main__breadcrumbs">
       <ul class="breadcrumbs__list">
@@ -155,6 +172,8 @@
     </div>
 
     <h1 class="site-main__title">Перфораторы</h1>
+
+    <div class="site-main__content">
 
     <section class="filter">
       <header class="filter__header">
@@ -264,8 +283,9 @@
 
       <section class="goods">
         <h2 class="visually-hidden">Товары из раздела : перфораторы</h2>
+        <div class="goods__inner">
 
-        <article class="product">
+        <article class="goods__item product">
           <h2 class="visually-hidden">Товары : Перфоратор BOSCH BFG 3000</h2>
           <div class="product__action disable">
             <a href="#" class="btn-custom btn-custom--buy">Купить</a>
@@ -283,7 +303,7 @@
           <div class="product__price">15 500 Р.</div>
         </article>
 
-        <article class="product">
+        <article class="goods__item product">
           <h2 class="visually-hidden">Товары : Перфоратор BOSCH BFG 6000</h2>
           <div class="product__action disable">
             <a href="#" class="btn-custom btn-custom--buy">Купить</a>
@@ -301,7 +321,7 @@
           <div class="product__price">25 500 Р.</div>
         </article>
 
-        <article class="product">
+        <article class="goods__item product">
           <h2 class="visually-hidden">Товары : Перфоратор BOSCH BFG 2000</h2>
           <div class="product__action disable">
             <a href="#" class="btn-custom btn-custom--buy">Купить</a>
@@ -318,7 +338,7 @@
           <div class="product__price">12 500 Р.</div>
         </article>
 
-        <article class="product">
+        <article class="goods__item product">
           <h2 class="visually-hidden">Товары : Перфоратор BOSCH BFG 3000</h2>
           <div class="product__action disable">
             <a href="#" class="btn-custom btn-custom--buy">Купить</a>
@@ -336,7 +356,7 @@
           <div class="product__price">15 500 Р.</div>
         </article>
 
-        <article class="product">
+        <article class="goods__item product">
           <h2 class="visually-hidden">Товары : Перфоратор BOSCH BFG 6000</h2>
           <div class="product__action disable">
             <a href="#" class="btn-custom btn-custom--buy">Купить</a>
@@ -354,7 +374,7 @@
           <div class="product__price">25 500 Р.</div>
         </article>
 
-        <article class="product">
+        <article class="goods__item product">
           <h2 class="visually-hidden">Товары : Перфоратор BOSCH BFG 2000</h2>
           <div class="product__action disable">
             <a href="#" class="btn-custom btn-custom--buy">Купить</a>
@@ -371,7 +391,7 @@
           <div class="product__price">12 500 Р.</div>
         </article>
 
-        <article class="product">
+        <article class="goods__item product">
           <h2 class="visually-hidden">Товары : Перфоратор BOSCH BFG 3000</h2>
           <div class="product__action disable">
             <a href="#" class="btn-custom btn-custom--buy">Купить</a>
@@ -389,7 +409,7 @@
           <div class="product__price">15 500 Р.</div>
         </article>
 
-        <article class="product">
+        <article class="goods__item product">
           <h2 class="visually-hidden">Товары : Перфоратор BOSCH BFG 6000</h2>
           <div class="product__action disable">
             <a href="#" class="btn-custom btn-custom--buy">Купить</a>
@@ -407,7 +427,7 @@
           <div class="product__price">25 500 Р.</div>
         </article>
 
-        <article class="product">
+        <article class="goods__item product">
           <h2 class="visually-hidden">Товары : Перфоратор BOSCH BFG 2000</h2>
           <div class="product__action disable">
             <a href="#" class="btn-custom btn-custom--buy">Купить</a>
@@ -423,6 +443,7 @@
           <p class="product__descr">Перфоратор BOSCH BFG 2000</p>
           <div class="product__price">12 500 Р.</div>
         </article>
+      </div>
       </section>
 
       <section class="pagination site-main__pagination">
@@ -449,6 +470,8 @@
         </ul>
       </section>
     </section>
+  </div>
+  </div>
 
     <section class="product-info">
       <h2 class="product-info__title">Пара слов о перфораторах</h2>
@@ -461,6 +484,7 @@
 
 
   <footer class="site-footer">
+    <div class="site-footer__wrapper">
     <div class="container">
       <div class="site-footer__container">
         <div class="site-footer__inner">
@@ -474,7 +498,7 @@
         <nav class="site-footer-nav">
           <ul class="navigation-footer">
             <li class="navigation-footer__item">
-              <a class="navigation-footer__link" href="index.html"  tabindex="0">Компания</a>
+              <a class="navigation-footer__link" href="#" tabindex="0">Компания</a>
             </li>
 
             <li class="navigation-footer__item">
@@ -482,7 +506,7 @@
             </li>
 
             <li class="navigation-footer__item">
-              <a class="navigation-footer__link" href="#"  tabindex="0">Каталог</a>
+              <a class="navigation-footer__link" href="catalog.html"  tabindex="0">Каталог</a>
             </li>
 
             <li class="navigation-footer__item">
@@ -512,6 +536,9 @@
           </ul>
         </nav>
       </div>
+    </div>
+  </div>
+    <div class="container">
 
       <p class="site-footer__copygight">© 2010–2017 Компания «Техномарт» Все права защищены</p>
 
@@ -540,14 +567,15 @@
       </div>
 
       <div class="site-footer__feedback">
-        Разработано
+        Разработано -
         <a href="#">htmlacademy.ru</a>
       </div>
 
     </div>
+
   </footer>
 
-  <section class="modal-cart">
+  <section class="modal-cart disable">
     <h2 class="visually-hidden">Добавление товара в корзину</h2>
     <button class="modal-cart__close">Закрыть</button>
 
