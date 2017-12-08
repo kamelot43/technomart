@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Cuprum";
   src: url("../fonts/cuprum.woff2") format("woff2"),
@@ -47,9 +46,6 @@
   font-style: normal;
 }
 
-
-
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -65,7 +61,7 @@ input[type="radio"].visually-hidden {
 
   -webkit-clip-path: inset(100%);
 
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -80,8 +76,6 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #828b8f;
-
-
 
   min-width: 1200px;
 }
@@ -101,7 +95,6 @@ a {
   background-color: #293449;
 }
 
-
 .site-header {
   padding-bottom: 60px;
   margin-bottom: 60px;
@@ -119,7 +112,6 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-
 }
 
 .site-header__descr {
@@ -134,7 +126,6 @@ a {
   font-weight: 400;
   color: #ee3643;
   outline: 2px solid orange;
-
 }
 
 .header-contacts {
@@ -143,12 +134,10 @@ a {
   outline: 2px solid orange;
 }
 
-
 .header-contacts__phone {
   font-size: 21px;
   line-height: 18px;
   color: #ee3643;
-
 }
 
 .header-contacts__descr {
@@ -173,9 +162,6 @@ a {
   box-sizing: border-box;
   outline: 2px solid blue;
 }
-
-
-
 
 /*НАВИГАЦИЯ */
 
@@ -232,13 +218,11 @@ a {
   display: flex;
 }
 
-
 .search {
   width: 260px;
   box-sizing: border-box;
   outline: 2px solid blue;
 }
-
 
 .search__input {
   width: 100%;
@@ -265,10 +249,9 @@ a {
 }
 
 .account__item a {
-  color: #32425c;;
+  color: #32425c;
   border-bottom: 1px solid #32425c;
 }
-
 
 /*ОСНОВОНОЙ КОНТЕНТ*/
 
@@ -307,13 +290,12 @@ a {
 
 .breadcrumbs__link {
   display: block;
-  padding:25px 15px 15px 15px;
+  padding: 25px 15px 15px 15px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
 }
-
 
 .groups {
   width: 300px;
@@ -329,7 +311,6 @@ a {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-
 }
 
 .slider {
@@ -411,8 +392,6 @@ a {
   outline: 2px solid blue;
 }
 
-
-
 .slider__arrow,
 .slider__toggle {
   font-size: 0;
@@ -428,7 +407,7 @@ a {
   margin-top: 70px;
 }
 
-.services__title{
+.services__title {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
@@ -463,11 +442,14 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .goods__item {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .goods__header,
@@ -525,13 +507,13 @@ a {
 
 .product-groups__wrapper--right {
   width: 300px;
-flex-direction: column;
-justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product {
   width: 220px;
-  height: 320px;
+  height: 315px;
   outline: 2px solid orange;
 }
 
@@ -546,8 +528,8 @@ justify-content: space-between;
 }
 
 .product__discount {
-  color:#999;
-   text-decoration:line-through;
+  color: #999;
+  text-decoration: line-through;
 }
 
 .delivery .container {
@@ -618,13 +600,18 @@ justify-content: space-between;
 .filter__fieldset {
   margin: 0;
   padding: 0;
+  padding-bottom: 22px;
   border: none;
 }
 
 .filter__fieldset--price {
   min-height: 190px;
   outline: 2px solid gold;
-  box-sizing: border-box;
+}
+
+.filter__fieldset--power {
+  min-height: 160px;
+  outline: 2px solid gold;
 }
 
 .filter__title,
@@ -641,28 +628,37 @@ justify-content: space-between;
 }
 
 .filter__legend {
-  padding: 10px 0;
+  padding-top: 15px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
   outline: 2px solid red;
+  text-transform: uppercase;
 }
 
 .filter__list {
   margin: 0;
   padding: 0;
+  padding-top: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
   list-style: none;
 }
 
 .filter__label {
+  display: block;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+}
+
+.filter__label:not(.filter__label--last) {
+  margin-bottom: 20px;
 }
 
 .filter__btn {
@@ -710,6 +706,7 @@ justify-content: space-between;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  text-transform: uppercase;
   color: #000000;
   opacity: 0.3;
   border-bottom: 1px solid #ee3643;
@@ -719,23 +716,45 @@ justify-content: space-between;
   font-size: 0;
 }
 
+.site-main__pagination {
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
+.pagination {
+  outline: 2px solid gold;
+}
+
 .pagination__list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .pagination__btn {
+  display: block;
+  padding: 12px 15px;
+  margin-right: 12px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  text-transform: uppercase;
   color: #000000;
+  outline: 2px solid green;
+}
+
+.product-info {
+  padding-top: 65px;
+  background-color: silver;
+  outline: 2px solid gold;
 }
 
 .product-info__title {
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
   font-size: 30px;
   line-height: 24px;
   font-weight: 400;
@@ -751,7 +770,6 @@ justify-content: space-between;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
-
 }
 
 /*ПОДВАЛ*/
@@ -761,14 +779,17 @@ justify-content: space-between;
   outline: 2px solid red;
 }
 
+.site-footer--inner {
+  margin-top: 70px;
+}
 
 .site-footer__site-logo {
-    width: 220px;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 35px;
-    box-sizing: border-box;
-    outline: 2px solid orange;
+  width: 220px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+  outline: 2px solid orange;
 }
 
 .site-footer__container {
@@ -800,7 +821,6 @@ justify-content: space-between;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-
 }
 
 .site-footer__copygight {
@@ -817,7 +837,7 @@ justify-content: space-between;
   line-height: 24px;
 }
 
-.site-footer__feedback{
+.site-footer__feedback {
   width: 140px;
   outline: 2px solid gold;
 }
@@ -826,7 +846,6 @@ justify-content: space-between;
   width: 110px;
   margin-left: auto;
 }
-
 
 .site-footer__feedback a {
   font: inherit;
@@ -857,7 +876,6 @@ justify-content: space-between;
   margin-left: 145px;
   margin-right: 120px;
 }
-
 
 .social {
   width: 130px;
@@ -898,10 +916,6 @@ justify-content: space-between;
   font-size: 0;
   border: 2px solid green;
 }
-
-
-
-
 
 /*ВСПОМОГАТЕЛЬНЫЕ ЭЛЕМЕНТЫ*/
 
