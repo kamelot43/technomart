@@ -97,8 +97,8 @@ a {
 
 .site-header {
   padding-bottom: 60px;
-  margin-bottom: 60px;
-  background-color: silver;
+  margin-bottom: 62px;
+  background-color: #f3f7f9;
   outline: 2px solid pink;
 }
 
@@ -117,30 +117,45 @@ a {
 .site-header__descr {
   margin: 0;
   padding: 0;
-
   width: 203px;
-
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   font-weight: 400;
   color: #ee3643;
-  outline: 2px solid orange;
 }
 
 .header-contacts {
   width: 270px;
-  padding: 45px 0;
-  outline: 2px solid orange;
+  margin-left: 67px;
+  text-align: center;
 }
 
 .header-contacts__phone {
+  position: relative;
+  padding: 10px;
   font-size: 21px;
   line-height: 18px;
   color: #ee3643;
+  border: 3px solid #ffffff;
+}
+
+.header-contacts__phone::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/phone.svg);
+    background-repeat: no-repeat;
 }
 
 .header-contacts__descr {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -177,11 +192,11 @@ a {
 
 .site-header__container .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
   padding-left: 50px;
+  padding-top: 48px;
+  padding-bottom: 38px;
   box-sizing: border-box;
-  outline: 2px solid blue;
 }
 
 /*НАВИГАЦИЯ */
@@ -195,8 +210,20 @@ a {
 }
 
 .navigation {
+  position: relative;
   display: flex;
   justify-content: center;
+  background-color: #32425c;
+}
+
+.navigation ::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: -5px;
+  background-color: #293449;
 }
 
 .navigation__link {
@@ -204,7 +231,17 @@ a {
   padding: 19px 30px;
   font: inherit;
   color: inherit;
-  outline: 2px solid yellow;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  outline: none;
+  background-color: #293449;
+}
+
+.navigation__link:active {
+  opacity: 0.5;
+  background-color: #1d2739;
 }
 
 .navigation-footer__link {
@@ -225,14 +262,14 @@ a {
   position: relative;
   display: block;
   width: 150px;
-  padding: 11px 5px 11px 26px;
+  padding: 12px 5px 12px 26px;
   box-sizing: border-box;
   text-align: center;
   cursor: pointer;
 }
 
 .navigation-header__link--order {
- padding: 11px 5px;
+ padding: 12px 5px;
  background-color: #63a63e;
 }
 
@@ -319,17 +356,11 @@ a {
 
 .search__input {
   width: 100%;
-  padding: 10px 10px 10px 47px;
+  padding: 12px 10px 12px 47px;
   font: inherit;
   background-color: transparent;
   border: none;
   color: 000000;
-}
-
-.search:hover,
-.search:focus {
-  outline: none;
-  background-color: #212a3a;
 }
 
 .search__label {
@@ -345,9 +376,13 @@ a {
   z-index: 10;
 }
 
-.search:hover .search__label,
-.search:focus .search__label {
+.search__input:hover +.search__label {
   opacity: 1;
+}
+
+.search__input:hover {
+  outline: none;
+  background-color: #212a3a;
 }
 
 .search__input:focus {
@@ -357,6 +392,7 @@ a {
 
 .search__input:focus + .search__label {
   background-image: url(../img/search-hover.svg);
+  opacity: 1;
 }
 
 .search__input::placeholder {
@@ -368,15 +404,57 @@ a {
 }
 
 .account {
-  width: 300px;
-  outline: 2px solid orange;
+  width: 280px;
+  margin-left: auto;
+}
+
+.account__user--unknown {
+  display: flex;
+  justify-content: space-between;
 }
 
 .account__link {
+  display: block;
+  padding: 12px 24px;
   font-size: 21px;
   line-height: 18px;
-  color: inherit;
+  color: #000000;
   text-decoration: none;
+  background-color: #ffffff;
+}
+
+.account__link__enter {
+  position: relative;
+  padding-top: 12px;
+  padding-right: 25px;
+  padding-left: 45px;
+}
+
+.account__link__enter::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 11px;
+  left: 11px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/login.svg);
+  opacity: 0.3;
+  background-repeat: no-repeat;
+}
+
+.account__link:hover::before,
+.account__link:focus::before  {
+  opacity: 1;
+}
+
+.account__link:hover {
+  color: #ee3643;
+}
+
+.account__link:active {
+  color: #000000;
+  opacity: 0.3;
 }
 
 .account__list {
@@ -436,7 +514,7 @@ a {
 
 .groups {
   width: 300px;
-  height: 125px;
+  height: 123px;
   padding: 25px;
   box-sizing: border-box;
   outline: 2px solid green;
