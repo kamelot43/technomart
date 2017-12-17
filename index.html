@@ -358,7 +358,8 @@
         <p class="services__descr">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
 
         <section class="slider-custom services__slider-custom">
-          <input type="radio" class="visually-hidden" id='param_1' name='toggle'>
+          <form>
+          <input type="radio" class="visually-hidden" id='param_1' name='toggle' checked>
           <input type="radio" class="visually-hidden" id='param_2' name='toggle'>
           <input type="radio" class="visually-hidden" id='param_3' name='toggle'>
 
@@ -376,22 +377,23 @@
                 </li>
 
                 <li class="slider-custom__item">
-                  <label class="slider-custom__toggle" for="param_2" tabindex="0">Кредит</label>
+                  <label class="slider-custom__toggle" for="param_3" tabindex="0">Кредит</label>
                 </li>
               </ul>
             </div>
+          </form>
 
             <div class="slider-custom__slide" id="custom-slide_1">
               <h3 class="slider-custom__title">Доставка</h3>
               <p class="slider-custom__descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
             </div>
 
-            <div class="slider-custom__slide disable" id="custom-slide_2">
+            <div class="slider-custom__slide " id="custom-slide_2">
               <h3 class="slider-custom__title">Гарантия</h3>
               <p class="slider-custom__descr">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
             </div>
 
-            <div class="slider-custom__slide disable" id="custom-slide_3">
+            <div class="slider-custom__slide " id="custom-slide_3">
               <h3 class="slider-custom__title">Кредит</h3>
               <p class="slider-custom__descr">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
               <a class="btn-original slider-custom__btn" href="#">Отправить заявку</a>
