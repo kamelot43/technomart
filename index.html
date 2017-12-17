@@ -7,7 +7,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
-  <style>
+  <!--<style>
   HTML {
     background: url( 'img/1.jpg' ) 50% 0 no-repeat;
   }
@@ -15,7 +15,7 @@
   BODY {
     opacity: .5;
   }
-</style>
+</style>-->
 
 </head>
 
@@ -39,7 +39,7 @@
 
                 <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
                   <input type="search" class="search__input" id='search__input' name='search__input' placeholder="Поиск :">
-                    <label class="search__label" for="search__input"></label>
+                  <label class="search__label" for="search__input"></label>
                 </form>
 
               </section>
@@ -170,8 +170,10 @@
 
           <section class="slider product-groups__slider">
             <h2 class="visually-hidden">Слайдер</h2>
+
             <input class="visually-hidden" type="radio" id='btn_1' name='toggle' checked>
             <input class="visually-hidden" type="radio" id='btn_2' name='toggle'>
+
 
             <div class="slider__toggles">
               <label class="slider__toggle slider__toggle-prev" for="btn_1">Назад</label>
@@ -182,8 +184,6 @@
               <label class="slider__arrow slider__arrow--prev" for="btn_1">Назад</label>
               <label class="slider__arrow slider__arrow--next" for="btn_2">Вперед</label>
             </div>
-
-
 
             <div class="slider__slides">
               <div class="slider__slide" id="slide-1">
@@ -196,9 +196,6 @@
                 <a class="btn-original slider__btn">Открыть каталог</a>
               </div>
             </div>
-
-
-
 
 
           </section>
@@ -358,10 +355,12 @@
         <p class="services__descr">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
 
         <section class="slider-custom services__slider-custom">
-          <form>
-          <input type="radio" class="visually-hidden" id='param_1' name='toggle' checked>
-          <input type="radio" class="visually-hidden" id='param_2' name='toggle'>
-          <input type="radio" class="visually-hidden" id='param_3' name='toggle'>
+
+
+          <input type="radio" class="visually-hidden" id='param_1' name='tabs' checked>
+          <input type="radio" class="visually-hidden" id='param_2' name='tabs'>
+          <input type="radio" class="visually-hidden" id='param_3' name='tabs'>
+
 
           <div class="slider-custom__content">
 
@@ -381,7 +380,6 @@
                 </li>
               </ul>
             </div>
-          </form>
 
             <div class="slider-custom__slide" id="custom-slide_1">
               <h3 class="slider-custom__title">Доставка</h3>
@@ -390,7 +388,8 @@
 
             <div class="slider-custom__slide " id="custom-slide_2">
               <h3 class="slider-custom__title">Гарантия</h3>
-              <p class="slider-custom__descr">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
+              <p class="slider-custom__descr">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь
+                сами.</p>
             </div>
 
             <div class="slider-custom__slide " id="custom-slide_3">
@@ -399,7 +398,6 @@
               <a class="btn-original btn-original--sm slider-custom__btn" href="#">Отправить заявку</a>
             </div>
           </div>
-
 
         </section>
       </div>
@@ -431,7 +429,7 @@
           <a class="delivery__map">
             <img src="img/map_sm.jpg" width="300" height="158" alt="карта проезда">
           </a>
-          <a class="btn-original delivery__btn" href="#">Заблудились ? Напишите нам !</a>
+          <a class="btn-original btn-original--full delivery__btn" href="#">Заблудились? Напишите нам!</a>
         </div>
 
       </div>
