@@ -84,9 +84,6 @@ a {
   text-decoration: none;
 }
 
-.disable {
-  display: none;
-}
 
 /* ШАПКА */
 
@@ -428,13 +425,14 @@ a {
 }
 
 .account {
-  width: 280px;
+  width: 300px;
   margin-left: auto;
 }
 
 .account__user--unknown {
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
 }
 
 .account__link {
@@ -481,15 +479,114 @@ a {
   opacity: 0.3;
 }
 
+.account__username {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 50px;
+  padding-right: 15px;
+  font-size: 21px;
+  line-height: 18px;
+  background-color: #ffffff;
+  color: #000000;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.account__user-profile {
+  position: relative;
+  color: #000000;
+}
+
+.account__user-profile::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 3px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/user.svg);
+  opacity: 0.3;
+  background-repeat: no-repeat;
+}
+
+.account__user-profile:hover::before {
+  opacity: 1;
+}
+
+.account__user-profile:active {
+  opacity: 0.3;
+}
+
+
+.account__logout {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url(../img/logout.svg);
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  top:12px;
+  right: 8px;
+}
+
+.account__logout:hover,
+.account__logout:focus {
+  outline: none;
+  opacity: 1;
+}
+
+.account__logout:active {
+  opacity: 0.3;
+}
+
+
+
 .account__list {
+  display: flex;
   margin: 0;
   padding: 0;
+  margin-top: 8px;
+  padding-left: 20px;
   list-style: none;
 }
 
+.account__item {
+  position: relative;
+  padding-right: 30px;
+}
+
+.account__item:first-of-type::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 7px;
+  right: 11px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #293449;
+}
+
 .account__item a {
+  font-size: 16px;
   color: #32425c;
   border-bottom: 1px solid #32425c;
+}
+
+.account__item a:hover,
+.account__item a:focus {
+  outline: none;
+  color: #ee3643;
+  border-bottom: 1px solid #ee3643;
+}
+
+.account__item a:active {
+  color: #ee3643;
+  border-bottom: 1px solid #ee3643;
+  opacity: 0.3;
 }
 
 /*ОСНОВОНОЙ КОНТЕНТ*/
@@ -1714,4 +1811,12 @@ background-color: #a9252e;
 .btn-product--buy:focus::after,
 .btn-product--buy:active::after {
   opacity: 1;
+}
+
+.disable {
+  display: none;
+}
+
+.colorize {
+  background-color: #ee3643;
 }
