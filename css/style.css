@@ -1640,9 +1640,9 @@ height: 20px;
 }
 
 .product-info {
-  padding-top: 65px;
-  background-color: silver;
-  outline: 2px solid gold;
+  padding-top: 67px;
+  padding-bottom: 70px;
+  background-color: #f2f6f8;
 }
 
 .product-info__title {
@@ -1710,7 +1710,7 @@ height: 20px;
 }
 
 .site-footer--inner {
-  margin-top: 70px;
+  margin-top: 0;
 }
 
 .site-footer__site-logo {
