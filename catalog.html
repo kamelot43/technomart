@@ -7,16 +7,6 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
-  <!--<style>
-  HTML {
-    background: url( 'img/2.jpg' ) 50% 0 no-repeat;
-  }
-
-  BODY {
-    opacity: .5;
-  }
-</style>-->
-
 </head>
 
 <body>
@@ -25,7 +15,6 @@
     <div class="site-header__wrapper">
       <div class="container">
         <nav class="site-header-nav">
-
 
           <div class="site-header__site-logo">
             <a href="index.html">Техномарт</a>
@@ -93,7 +82,7 @@
 
           <div class="account__user account__user--verified ">
             <div class="account__username">
-             <a class="account__user-profile" href="#" title="Профиль пользователя">Равшан Джамшутович</a>
+              <a class="account__user-profile" href="#" title="Профиль пользователя">Равшан Джамшутович</a>
               <a class="account__logout" href="#" title="Выйти">Выйти</a>
             </div>
             <ul class="account__list">
@@ -150,7 +139,6 @@
     </nav>
   </header>
 
-
   <main class="site-main">
     <div class="container">
 
@@ -187,12 +175,12 @@
                 <h2 class="visually-hidden">Фильтр по цене</h2>
 
                 <div class="range-filter__controls">
-                <div class="range-filter__scale">
-                  <div class="range-filter__bar"></div>
-                </div>
+                  <div class="range-filter__scale">
+                    <div class="range-filter__bar"></div>
+                  </div>
 
-                <div class="range-filter__toggle range-filter__toggle--min">min</div>
-                <div class="range-filter__toggle range-filter__toggle--max">max</div>
+                  <div class="range-filter__toggle range-filter__toggle--min">min</div>
+                  <div class="range-filter__toggle range-filter__toggle--max">max</div>
                 </div>
 
                 <div class="range-filter__price-controls">
@@ -497,7 +485,6 @@
 
   </main>
 
-
   <footer class="site-footer site-footer--inner">
     <div class="site-footer__wrapper">
       <div class="container">
@@ -564,7 +551,6 @@
             <a class="social__link social__link--vk" href="#">VK</a>
           </li>
 
-
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">Facebook</a>
           </li>
@@ -591,19 +577,20 @@
   </footer>
 
   <section class="popup popup--cart">
-  <h2 class="visually-hidden">Добавление товара в корзину</h2>
-  <button class="popup__close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="visually-hidden">Добавление товара в корзину</h2>
+    <button class="popup__close popup__close--cart" type="button" title="Закрыть">Закрыть</button>
     <div class="container">
-    <p class="popup__descr">Товар добавлен в корзину!</p>
-  </div>
+      <p class="popup__descr">Товар добавлен в корзину!</p>
+    </div>
     <div class="popup__action">
       <div class="container">
         <button class="btn-original btn-original--cart" type="button">Оформить заказ</button>
-        <button class="btn-original btn-original--cart colorize-white" type="button">Продолжить покупки</button>
+        <button class="btn-original btn-original--cart colorize-white continue" type="button">Продолжить покупки</button>
       </div>
     </div>
   </section>
 
+  <script src="js/script.js"></script>
 
 </body>
 

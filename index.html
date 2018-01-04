@@ -7,16 +7,6 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
-  <!--<style>
-  HTML {
-    background: url( 'img/cart-1.png' ) 50% 0 no-repeat;
-  }
-
-  BODY {
-    opacity: .5;
-  }
-</style>-->
-
 </head>
 
 <body>
@@ -25,7 +15,6 @@
     <div class="site-header__wrapper">
       <div class="container">
         <nav class="site-header-nav">
-
 
           <div class="site-header__site-logo">
             <a href="#">Техномарт</a>
@@ -174,7 +163,6 @@
             <input class="visually-hidden" type="radio" id='btn_1' name='toggle' checked>
             <input class="visually-hidden" type="radio" id='btn_2' name='toggle'>
 
-
             <div class="slider__toggles">
               <label class="slider__toggle slider__toggle-prev" for="btn_1">Назад</label>
               <label class="slider__toggle slider__toggle--next" for="btn_2">Вперед</label>
@@ -196,7 +184,6 @@
                 <a class="btn-original slider__btn">Открыть каталог</a>
               </div>
             </div>
-
 
           </section>
         </div>
@@ -235,7 +222,6 @@
         </header>
 
         <div class="goods__inner">
-
 
           <article class="product">
             <h2 class="visually-hidden">Товары : Перфоратор BOSCH BFG 9000</h2>
@@ -356,11 +342,9 @@
 
         <section class="slider-custom services__slider-custom">
 
-
           <input type="radio" class="visually-hidden" id='param_1' name='tabs' checked>
           <input type="radio" class="visually-hidden" id='param_2' name='tabs'>
           <input type="radio" class="visually-hidden" id='param_3' name='tabs'>
-
 
           <div class="slider-custom__content">
 
@@ -389,7 +373,8 @@
             <div class="slider-custom__slide " id="custom-slide_2">
               <h3 class="slider-custom__title">Гарантия</h3>
               <p class="slider-custom__descr">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь
-                сами.</p>
+                сами.
+              </p>
             </div>
 
             <div class="slider-custom__slide " id="custom-slide_3">
@@ -407,7 +392,7 @@
       <h2 class="visually-hidden">Доставка заказа</h2>
       <div class="container">
         <div class="delivery__companies">
-          <h2 class="delivery__title">Компания  «Техномарт»</h2>
+          <h2 class="delivery__title">Компания «Техномарт»</h2>
           <p class="delivery__descr">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 
           <p class="delivery__descr">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
@@ -418,7 +403,6 @@
             <li class="delivery__item">ЖелДорЭкспедиция</li>
           </ul>
 
-
           <a class="btn-original delivery__btn" href="#">Подробнее о компании</a>
         </div>
 
@@ -426,10 +410,10 @@
           <h2 class="delivery__title">Контакты</h2>
           <p class="delivery__descr delivery__descr--short">Вы можете забрать товар сами, заехав в наш офис:</p>
 
-          <a class="delivery__map">
+          <a class="delivery__map" href="#">
             <img src="img/map_sm.jpg" width="300" height="158" alt="карта проезда">
           </a>
-          <a class="btn-original btn-original--full delivery__btn" href="#">Заблудились? Напишите нам!</a>
+          <a class="btn-original btn-original--full delivery__btn" id="open-form" href="#">Заблудились? Напишите нам!</a>
         </div>
 
       </div>
@@ -502,7 +486,6 @@
             <a class="social__link social__link--vk" href="#">VK</a>
           </li>
 
-
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">Facebook</a>
           </li>
@@ -529,66 +512,66 @@
   </footer>
 
   <section class="popup popup--cart">
-  <h2 class="visually-hidden">Добавление товара в корзину</h2>
-  <button class="popup__close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="visually-hidden">Добавление товара в корзину</h2>
+    <button class="popup__close popup__close--cart" type="button" title="Закрыть">Закрыть</button>
     <div class="container">
-    <p class="popup__descr">Товар добавлен в корзину!</p>
-  </div>
+      <p class="popup__descr">Товар добавлен в корзину!</p>
+    </div>
     <div class="popup__action">
       <div class="container">
         <button class="btn-original btn-original--cart" type="button">Оформить заказ</button>
-        <button class="btn-original btn-original--cart colorize-white" type="button">Продолжить покупки</button>
+        <button class="btn-original btn-original--cart colorize-white continue" type="button">Продолжить покупки</button>
       </div>
     </div>
   </section>
 
-  <section class="popup">
+  <section class="popup popup--form">
 
     <h2 class="visually-hidden">Заполните форму для обратной связи</h2>
 
-    <button class="popup__close" type="button" title="Закрыть">Закрыть</button>
-
+    <button class="popup__close popup__close--form" type="button" title="Закрыть">Закрыть</button>
 
     <form class="popup__form" action="https://echo.htmlacademy.ru/ " method="get">
       <div class="container">
 
-      <ul class="popup__list">
+        <ul class="popup__list">
 
-        <li class="popup__item">
-          <label class="popup__label " for="popup-name">Ваше имя: </label>
-          <input class="popup__input " type="text" name="popup-name" id="popup-name" placeholder="Представьтесь, пожалуйста">
-        </li>
+          <li class="popup__item">
+            <label class="popup__label " for="popup-name">Ваше имя: </label>
+            <input class="popup__input " type="text" name="popup-name" id="popup-name" placeholder="Представьтесь, пожалуйста">
+          </li>
 
-        <li class="popup__item">
-          <label class="popup__label " for="popup-mail">Ваш e-mail:</label>
-          <input class="popup__input " type="email" name="popup-mail" id="popup-mail" placeholder="Для отправки ответа">
-        </li>
+          <li class="popup__item">
+            <label class="popup__label " for="popup-mail">Ваш e-mail:</label>
+            <input class="popup__input " type="email" name="popup-mail" id="popup-mail" placeholder="Для отправки ответа">
+          </li>
 
-        <li class="popup__item popup__item--textarea">
-          <label class="popup__label" for="popup-feedback">Текст письма:</label>
-          <textarea class="popup__textarea" name="popup-feedback" id='popup-feedback' placeholder="В свободной форме"></textarea>
-        </li>
+          <li class="popup__item popup__item--textarea">
+            <label class="popup__label" for="popup-feedback">Текст письма:</label>
+            <textarea class="popup__textarea" name="popup-feedback" id='popup-feedback' placeholder="В свободной форме"></textarea>
+          </li>
 
-      </ul>
-    </div>
+        </ul>
+      </div>
 
       <div class="popup__inner">
         <div class="container">
 
-      <button class="btn-original btn-original--max popup__btn" type="submit">Отправить</button>
-    </div>
+          <button class="btn-original btn-original--max popup__btn" type="submit">Отправить</button>
+        </div>
 
-    </div>
+      </div>
 
     </form>
   </section>
 
   <section class="modal-map">
-  <h2 class="visually-hidden">Как до нас добраться</h2>
-  <p><img src="img/map_bg.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-<button class="modal-map__close" type="button" title="Закрыть">Закрыть</button>
-</section>
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p><img src="img/map_bg.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+    <button class="modal-map__close" type="button" title="Закрыть">Закрыть</button>
+  </section>
 
+  <script src="js/script.js"></script>
 
 </body>
 
