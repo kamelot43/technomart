@@ -9,7 +9,7 @@
 
   <!--<style>
   HTML {
-    background: url( 'img/1.jpg' ) 50% 0 no-repeat;
+    background: url( 'img/1-4.png' ) 50% 0 no-repeat;
   }
 
   BODY {
@@ -541,34 +541,43 @@
     </div>
   </section>
 
-  <section class="popup disable">
+  <section class="popup">
+
     <h2 class="visually-hidden">Заполните форму для обратной связи</h2>
 
-    <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+    <button class="popup__close" type="button" title="Закрыть">Закрыть</button>
 
 
     <form class="popup__form" action="https://echo.htmlacademy.ru/ " method="get">
+      <div class="container">
 
       <ul class="popup__list">
 
         <li class="popup__item">
-          <label class="popup__label visually-hidden" for="popup-name">Ваше имя: </label>
-          <input class="popup__input " type="text" name="popup-name" id="popup-name" placeholder="Представтесь пожалуйста">
+          <label class="popup__label " for="popup-name">Ваше имя: </label>
+          <input class="popup__input " type="text" name="popup-name" id="popup-name" placeholder="Представьтесь, пожалуйста">
         </li>
 
         <li class="popup__item">
-          <label class="popup__label visually-hidden " for="popup-mail">Ваш email :</label>
+          <label class="popup__label " for="popup-mail">Ваш e-mail:</label>
           <input class="popup__input " type="email" name="popup-mail" id="popup-mail" placeholder="Для отправки ответа">
         </li>
 
-        <li class="popup__item">
-          <label class="popup__label visually-hidden" for="popup-feedback">Текст письма</label>
+        <li class="popup__item popup__item--textarea">
+          <label class="popup__label" for="popup-feedback">Текст письма:</label>
           <textarea class="popup__textarea" name="popup-feedback" id='popup-feedback' placeholder="В свободной форме"></textarea>
         </li>
 
       </ul>
+    </div>
 
-      <button class="btn-original popup__btn" type="submit">Отправить</button>
+      <div class="popup__inner">
+        <div class="container">
+
+      <button class="btn-original btn-original--max popup__btn" type="submit">Отправить</button>
+    </div>
+
+    </div>
 
     </form>
   </section>
