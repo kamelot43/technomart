@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Technomart-catalog</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 
 </head>
 
@@ -67,7 +67,9 @@
         <section class="header-contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
           <div class="header-contacts__phone">
-            +7 (812) 555-05-55
+            <a href="tel:+78125550555">
+              +7 (812) 555-05-55
+            </a>
           </div>
           <p class="header-contacts__descr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </section>
@@ -184,11 +186,15 @@
                 </div>
 
                 <div class="range-filter__price-controls">
-                  <label class="range-filter__label visually-hidden" for="price-min">Минимальное значение</label>
+                  <!--<label class="range-filter__label visually-hidden" for="price-min">Минимальное значение</label>-->
+                  <label>Минимальное значение
                   <input class="range-filter__input" name="range-filter__input" type="text" value="0" id="price-min">
+                </label>
 
-                  <label class="range-filter__label visually-hidden" for="price-max">Максимальное значение</label>
+                  <!--<label class="range-filter__label visually-hidden" for="price-max">Максимальное значение</label>-->
+                  <label>Максимальное значение
                   <input class="range-filter__input" name="range-filter__input" type="text" value="30000" id="price-max">
+                </label>
 
                 </div>
               </section>
@@ -300,7 +306,7 @@
                   </a>
                 </div>
 
-                <p class="product__descr">Перфоратор BOSCH BFG 3000</p>
+                <div class="product__descr">Перфоратор BOSCH BFG 3000</div>
                 <div class="product__discount">22 500 Р.</div>
                 <div class="btn-custom product__price">15 500 Р.</div>
               </article>
@@ -494,7 +500,11 @@
               <a href="index.html">Техномарт</a>
             </div>
 
-            <p class="site-footer__descr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+            <p class="site-footer__descr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              <a href="tel:+78125550555">
+              +7 (812) 555-05-55
+            </a>
+            </p>
           </div>
 
           <nav class="site-footer-nav">
@@ -590,7 +600,7 @@
     </div>
   </section>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 
